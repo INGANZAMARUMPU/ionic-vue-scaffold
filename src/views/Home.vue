@@ -6,6 +6,7 @@
       </ion-toolbar>
       <ion-content class="ion-padding">
         Kaze m'URUFATANAMENDE
+        <ion-icon :src="getIcon('thumbsUpOutline')"></ion-icon>
       </ion-content>
     </ion-header>
   </ion-page>
