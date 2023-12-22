@@ -2,9 +2,10 @@ import {createApp} from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import axios from 'axios'
 import {
   IonApp, IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonicVue,
-  IonRouterOutlet 
+  IonRouterOutlet, IonIcon 
 } from '@ionic/vue';
 import '@ionic/core/css/ionic.bundle.css'
 import * as allIcons from "ionicons/icons";
@@ -18,7 +19,7 @@ const app = createApp(App)
 
 const components = {
   IonApp, IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonicVue,
-  IonRouterOutlet
+  IonRouterOutlet, IonIcon
 };
 
 Object.entries(components).forEach(([name, component]) => {
